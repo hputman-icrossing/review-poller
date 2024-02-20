@@ -1,0 +1,34 @@
+{
+  "name": "review-poller",
+  "version": "1.0.0",
+  "description": "Tool to test reviews API",
+  "main": "review-poller.js",
+  "type": "module",
+  "scripts": {
+    "start": "node review-poller.js",
+    "ix-dev": "cross-env TEST_ENVIRONMENT=ix-dev node review-poller.js",
+    "ix-qa": "cross-env TEST_ENVIRONMENT=ix-qa node review-poller.js",
+    "ix-r": "cross-env TEST_ENVIRONMENT=ix-r node review-poller.js",
+    "cwh-int": "cross-env TEST_ENVIRONMENT=cwh-int node review-poller.js",
+    "cwh-qa": "cross-env TEST_ENVIRONMENT=cwh-qa node review-poller.js",
+    "cwh-uat": "cross-env TEST_ENVIRONMENT=cwh-uat node review-poller.js",
+    "production": "cross-env TEST_ENVIRONMENT=www node review-poller.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hputman-icrossing/review-poller.git"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/hputman-icrossing/review-poller/issues"
+  },
+  "homepage": "https://github.com/hputman-icrossing/review-poller#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
